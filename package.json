@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Starter pack for electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolljee/Electron-starter.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Rolljee",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rolljee/Electron-starter/issues"
+  },
+  "homepage": "https://github.com/rolljee/Electron-starter#readme"
+}
