@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World!</title>
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/materialize.min.css">
+	<!-- normal script imports etc  -->
+	<script src="../scripts/jquery.min.js"></script>
+	<script src="../scripts/materialize.min.js"></script>
+
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+</head>
+
+<body>
+
+	<h1>This should be an other page</h1>
+
+	<script>
+         require('../assets.js');
+    </script>
+</body>
+
+</html>

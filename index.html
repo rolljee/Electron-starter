@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <script>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World!</title>
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/materialize.min.css">
+	<!-- normal script imports etc  -->
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/materialize.min.js"></script>
+
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+</head>
+
+<body>
+
+	<div class="collection">
+		<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+		<a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
+		<a href="#!" class="collection-item">Alan</a>
+		<a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+	</div>
+	<a href="html/formulaire.html" class="waves-effect waves-light btn" id="coucou">button</a>
+
+
+
+
+	<script>
          require('./assets.js');
     </script>
-  </body>
+</body>
+
 </html>
