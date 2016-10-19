@@ -3,12 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Hello World!</title>
+	<title>Todo app!</title>
 	<!-- Insert this line above script imports  -->
 	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="public/css/materialize.min.css">
+	<link rel="stylesheet" href="public/css/global.css">
 	<!-- normal script imports etc  -->
 	<script src="scripts/jquery.min.js"></script>
 	<script src="scripts/materialize.min.js"></script>
@@ -18,20 +19,48 @@
 </head>
 
 <body>
-
-	<div class="collection">
-		<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
-		<a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
-		<a href="#!" class="collection-item">Alan</a>
-		<a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+	<nav>
+		<div class="nav-wrapper">
+			<form>
+				<div class="input-field">
+					<input id="search" type="search" required>
+					<label for="search"><i class="material-icons">search</i></label>
+					<i class="material-icons">close</i>
+				</div>
+			</form>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<form id="add-todo">
+					<div class="row">
+						<div class="input-field col s7">
+							<i class="material-icons prefix">dashboard</i>
+							<input id="description-todo" type="tel" class="validate">
+							<label for="description-todo">Description</label>
+						</div>
+						<div class="input-field col s5">
+							<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+								<i class="material-icons right">send</i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div id="todo-list">
+					<ul id="todo">
+						<!-- rendered in assets.js-->
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
-	<a href="html/formulaire.html" class="waves-effect waves-light btn" id="coucou">button</a>
-
-
-
-
 	<script>
-         require('./assets.js');
+         require('./js/assets.js');
     </script>
 </body>
 

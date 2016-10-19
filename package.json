@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/rolljee/Electron-starter/issues"
   },
-  "homepage": "https://github.com/rolljee/Electron-starter#readme"
+  "homepage": "https://github.com/rolljee/Electron-starter#readme",
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "underscore": "^1.8.3"
+  }
 }
