@@ -15,7 +15,7 @@ Witch is interresting are the tech / framework used for this !
 ## Database
 
 I've just found an interresting library.  
-A lighweigth database you can get by : `npm install --save nedb` -> See the full doc here (and show your support).
+A lighweigth database you can get by : `npm install --save nedb` -> [See the full doc here](https://github.com/louischatriot/nedb) (witch is awesome).
 
 # USAGE : how to ? 
 
